@@ -1,0 +1,62 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 11px;
+        padding-top: 11px;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 56px;
+    }
+
+    &__input- {
+        padding: 0;
+        // border:1px solid
+        background-color: #F8FAFD;
+        border-radius:22px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    &__input {
+        border:none;
+        background-color: #F8FAFD;
+        padding: 5px;
+        border-radius:22px;
+        width: 500px;
+    }
+
+    &__input:focus  {
+        outline: none;
+    }
+
+    &__sun-link {
+        text-decoration: none;
+        margin-right: 15px;
+    }
+
+    &__logaut-btn {
+        padding: 11px 23px;
+        font-family: Rubik;
+        // font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: #0D75FF;
+        border-radius: 4px;
+        border:none;
+    }
+}
+// hr {
+//     width: 100%;
+// }
