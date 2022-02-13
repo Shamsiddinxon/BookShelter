@@ -412,6 +412,7 @@ img {
 
 .product {
   width: 100%;
+  min-width: 778px;
   background: #F8FAFD;
 }
 

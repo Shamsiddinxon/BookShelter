@@ -164,14 +164,14 @@ const getmovies = async function () {
     var films = data.items;
     books.push(...films);
     result.textContent = data.totalItems;
-    if(films.length > 0) {
-      ellist.innerHTML = null;
-      renderFilms(films, ellist);
-    }
   } catch (err) {
     // console.log("Qayerdadur Xatobor");
     console.log(err.message);
     alert("Kechirasiz bukino mavjudemas")
+  }
+  if(films.length > 0) {
+    ellist.innerHTML = null;
+    renderFilms(films, ellist);
   }
 
 };
