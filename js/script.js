@@ -255,3 +255,36 @@ elRelevBtn.addEventListener("click", () => {
   elRelevBtn.classList.add("none");
   elNewBtn.classList.remove("none");
 })
+
+
+////////////////////////////////////////////////////////
+const ulTag = document.querySelector(".pagination-list");
+let totalPages = 20
+
+function element(totalPages, page){
+  let litag = '';
+  let activeLi;
+  let beforePages = page - 1
+  let afterPages = page + 1
+  if(page > 1) {
+    litag += `<li class="btn prev" onclick="element(totalPages, ${page - 1})"><span><i class="fas fa-angle-left"></i>Prev</span></li>`
+  }
+  // if()
+
+  for (let pageLength = beforePages; pageLength <= afterPages; pageLength++) {
+    if(page == pageLength) {
+      activeLi = "active"
+    } else {
+      activeLi = ""
+    }
+    litag += `<li class="num ${activeLi} "><span>${pageLength}</span></li>`
+  }
+
+  if(page < totalPages) {
+    litag += `<li class="btn next" onclick="element(totalPages, ${page + 1})"><span>Next<i class="fas fa-angle-right"></i></span></li>`
+  }
+  ulTag.innerHTML = litag;
+
+}
+
+element(totalPages, 5)
