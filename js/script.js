@@ -1,4 +1,16 @@
 "use strict";
+//////////////////////////////////////////////////////
+/////////////LOGIN ///////////////////////////////////
+///////////////////////////////////////////////////
+const localToken = window.localStorage.getItem("token");
+if (!localToken) {
+  window.location.replace("login.html");
+}
+logautBtn.addEventListener("click", function () {
+  window.localStorage.removeItem("token");
+  window.location.replace("login.html");
+  console.log("53x");
+});
 
 const elSearchInput = document.querySelector(".header__input");
 const ellist = document.querySelector(".product__list");
@@ -23,18 +35,6 @@ elRelevBtn.classList.add("none");
 
 
 
-//////////////////////////////////////////////////////
-/////////////LOGIN ///////////////////////////////////
-///////////////////////////////////////////////////
-const localToken = window.localStorage.getItem("token");
-if (!localToken) {
-  window.location.replace("login.html");
-}
-logautBtn.addEventListener("click", function () {
-  window.localStorage.removeItem("token");
-  window.location.replace("login.html");
-  console.log("53x");
-});
 
 //////////////////////////////////////////////////////
 ///////////////RENDER books///////////////////////////
@@ -176,11 +176,13 @@ const getmovies = async function () {
 
 };
 
-// if(ellist.length > 0) {
-//   renderFilms(films, ellist);
-// }
+if(books.length > 0 || localToken) {
+  // renderFilms(films, ellist);
+  getmovies();
+} else {
+  
+}
 
-getmovies();
 
 ////////////// input chanche ////////////////////////////
 elSearchInput.addEventListener("change", () => {
