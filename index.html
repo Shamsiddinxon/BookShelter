@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans&family=Rubik:wght@400;500&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="./css/main.css">
     <title>BookShelt</title>
 </head>
@@ -38,16 +39,17 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero ">
         <div class="hero__rerult">
             <p class="result">Showing <span id="result">10</span> Result</p>
         </div>
 
-        <button class="hero__new-btn"><img src="./images/new-.svg" alt="">Order by newest</button>
+        <button class="hero__new-btn btn"><img src="./images/new-.svg" alt="">Order by newest</button>
+        <button class="hero__relev-btn btn"><img src="./images/new-.svg" alt="">Order by relevance</button>
     </section>
 
     <!-- MAIN -->
-    <main class="main">
+    <main class="main ">
 
         <!-- BOOKMARK -->
         <section class="bookmark">
@@ -57,89 +59,51 @@
             </div>
 
             <ul class="bookmark__list">
-                <li class="bookmark__item">
-                    <div>
-                        <h3 class="bookmark__item-title">Python</h3>
-                        <p class="bookmark__item-desc">David M. Beazley</p>
-                    </div>
-                    <div>
-                        <button class="bookmark__bookmarkbtn">
-                            <img src="./images/book.svg" alt="" weight="24" height="24">
-                        </button>
-                        <button class="bookmark__delebtn">
-                            <img src="./images/delete.svg" alt="" weight="24" height="24">
-                        </button>
-                    </div>
-                </li>
+
             </ul>
         </section>
+
+
 
         <!-- PRODUCT -->
         <section class="product">
             <ul class="product__list">
-                <li class="product__item">
-                    <div class="product__top">
-                        <img class="product__img" src="./images/inmg.png" alt="">
-                    </div>
 
-                    <div class="product__item-descs">
-                        <h3 class="product__item-title">Python</h3>
-                        <p class="product__item-desc">David M. Beazley</p>
-                        <p class="product__item-year">2009</p>
-                    </div>
-
-                    <div class="product__item-bottom">
-                        <div>
-                            <button class="product__item-bookmark-btn">Bookmark</button>
-                            <button class="product__item-more-btn">More Info</button>
-                        </div>
-                        <button class="product__item-read-btn">Read</button>
-                    </div>
-                </li>
-
-                <li class="product__item">
-                    <div class="product__top">
-                        <img class="product__img" src="./images/inmg.png" alt="">
-                    </div>
-
-                    <div class="product__item-descs">
-                        <h3 class="product__item-title">Python</h3>
-                        <p class="product__item-desc">David M. Beazley</p>
-                        <p class="product__item-year">2009</p>
-                    </div>
-
-                    <div class="product__item-bottom">
-                        <div>
-                            <button class="product__item-bookmark-btn">Bookmark</button>
-                            <button class="product__item-more-btn">More Info</button>
-                        </div>
-                        <button class="product__item-read-btn">Read</button>
-                    </div>
-                </li>
-
-                <li class="product__item">
-                    <div class="product__top">
-                        <img class="product__img" src="./images/inmg.png" alt="">
-                    </div>
-
-                    <div class="product__item-descs">
-                        <h3 class="product__item-title">Python</h3>
-                        <p class="product__item-desc">David M. Beazley</p>
-                        <p class="product__item-year">2009</p>
-                    </div>
-
-                    <div class="product__item-bottom">
-                        <div>
-                            <button class="product__item-bookmark-btn">Bookmark</button>
-                            <button class="product__item-more-btn">More Info</button>
-                        </div>
-                        <button class="product__item-read-btn">Read</button>
-                    </div>
-                </li>
             </ul>
+
+            <div class="pagination-wrapper d-flex align-items-center ">
+                <i class="prev-btn fas fa-angle-double-left"></i>
+                <ul class="pagination">
+                <li class="page-item page-link active">1</li>
+
+                <li class="page-item page-link">2</li>
+
+                <li class="page-item page-link">3</li>
+
+                <li class="page-item page-link">4</li>
+
+                <li class="page-item page-link">5</li>
+
+                <li class="page-item page-link">6</li>
+
+                <li class="page-item page-link">7</li>
+
+                <li class="page-item page-link">8</li>
+
+                <li class="page-item page-link">9</li>
+
+                <li class="page-item page-link">10</li>
+              </ul>
+                <i class="next-btn fas fa-angle-double-right"></i>
+              </div>
         </section>
     </main>
 
+    <!-- MORE -->
+    <div class="overlays"></div>
+    <div class="more">
+
+    </div>
 
     <script src="./js/script.js"></script>
 </body>

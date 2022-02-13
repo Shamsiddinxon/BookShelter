@@ -1,8 +1,10 @@
 .bookmark {
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
-    padding: 25px;
+    padding: 23px;
+    width: 264px;
     &__title {
         margin: 0;
+        width: 218px;
         font-weight: normal;
         font-size: 24px;
         line-height: 28px;
@@ -36,6 +38,7 @@
     }
 
     &__item-title {
+        max-width: 131px;
         margin: 0;
         margin-bottom: 5px;
         padding: 0;
@@ -46,6 +49,7 @@
     }
 
     &__item-desc {
+        max-width: 131px;
         margin: 0;
         padding: 0;
         font-weight: 500;
@@ -62,5 +66,6 @@
         background: #F8FAFD;
         width: 24px;
         height: 24px;
+        text-decoration: none;
     }
 }

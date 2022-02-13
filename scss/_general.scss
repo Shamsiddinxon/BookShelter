@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -25,4 +26,9 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+.none {
+    display: none;
+    width: 1px;
 }

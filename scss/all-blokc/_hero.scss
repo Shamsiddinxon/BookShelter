@@ -26,7 +26,32 @@
         border: none;
     }
 
+    &__relev-btn {
+        width: 200px;
+        height: 34px;
+        padding: 5px 10px;
+        display: flex;
+        align-items:center;
+        color:#fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        background: #A6B0C3;
+        border-radius: 4px;
+        border: none;
+    }
+
+    &__relev-btn img {
+        margin-right: 15px;
+    }
+
     &__new-btn img {
         margin-right: 5px;
     }
+}
+
+.none {
+    display: none;
+    width: 1px;
 }
